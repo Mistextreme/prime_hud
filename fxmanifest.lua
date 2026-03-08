@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Prime Scripts'
-description 'discord.gg/prime-scripts'
-version '1.2.0'
+author 'Mist Scripts'
+description 'mist_ui - Notify / Progressbar / Announce / HelpNotify'
+version '1.0.0'
 
 lua54 'yes'
 
@@ -14,7 +14,8 @@ shared_scripts {
 }
 
 client_scripts {
-    'client/client.lua'
+    'client/client.lua',
+    'client/test.lua' -- remove esta linha em producao
 }
 
 server_scripts {
@@ -28,13 +29,8 @@ files {
 
 export {
     "progressbar",
+    "cancel_progressbar",
     "helpnotify",
-    "hidehud",
     "announce",
     "notify"
-}
-
-escrow_ignore {
-	'config/cl_config.lua',
-    'config/sv_config.lua'
 }
